@@ -1,0 +1,103 @@
+.shoeName{
+  font-size: 16px;
+  color: gray;
+  position: relative;
+  font-weight: 500;
+  border-radius: 5px;
+  margin: 10px;
+  padding: 10px;
+
+}
+.companiesCont{
+  display: flex;
+  /* border: 1px blue solid; */
+  padding: 5px;
+  margin: 40px;
+  flex-flow: row wrap;
+}
+
+.compCont{
+  position: relative;
+  cursor: pointer;
+  padding: 5px;
+  margin: 5px;
+  flex-basis: 100%;
+  /* border: 1px white solid; */
+  border-bottom: 1px white solid;
+  /* border-radius: 5px; */
+  display: flex;
+  justify-content: space-between;
+  transition: all .3s ease;
+}
+
+.compCont:hover{
+  background: #cb7c00;
+}
+.compCont:active{
+  color: black;
+}
+
+.compName{
+  font-size: 24px;
+  font-weight: 600;
+  padding: 10px;
+  margin: 10px;
+  /* border: 1px red solid; */
+}
+
+.compShoePrice{
+  font-weight: 600;
+  padding: 10px;
+  margin: 10px;
+  /* border: 1px red solid; */
+}
+
+.header{
+  /* border: 1px red solid; */
+  padding: 5px;
+  margin: 5px;
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+.minCompCont{
+  z-index: 1000;
+  flex-basis: 33%;
+  border: 1px white solid;
+  cursor: pointer;
+  padding: 5px;
+  margin: 5px;
+  border-radius: 5px;
+}
+.minCompCont:hover{
+  background: #cb7c00;
+}
+.minCompName{
+  /* border: 1px red solid; */
+  margin: 5px;
+  font-weight: 600;
+}
+.minCompPrice{
+  /* border: 1px red solid; */
+  padding: 5px;
+  margin: 5px;
+  font-weight: 600;
+}
+.avgPriceCont{
+  flex-basis: 33%;
+  /* border: 1px red solid; */
+  padding: 5px;
+  margin: 5px;
+}
+.headerTitle{
+  /* border: 1px red solid; */
+  padding: 5px;
+  margin: 5px;
+  font-size: 22px;
+}
+.avgPrice{
+  /* border: 1px red solid; */
+  padding: 5px;
+  margin: 5px;
+  font-weight: 600;
+}

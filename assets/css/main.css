@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,600');
+
+body {
+    background: #f39c12;  /* fallback for old browsers */
+    color:#fff;
+    font-family: 'Montserrat';
+    /* margin:0; */
+    /* position: relative; */
+}
+
+*:focus {
+  outline: none;
+}
+
+.noHighlight{
+  user-select: none;
+}
