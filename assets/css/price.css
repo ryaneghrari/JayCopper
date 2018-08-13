@@ -1,11 +1,13 @@
 .shoeName{
-  font-size: 16px;
-  color: gray;
+  font-size: 24px;
+  color: white;
   position: relative;
-  font-weight: 500;
-  border-radius: 5px;
+  font-weight: 600;
+  opacity: .8;
+  /* border: 1px red solid; */
+  text-align: center;
   margin: 10px;
-  padding: 10px;
+  padding: 40px;
 
 }
 .companiesCont{
