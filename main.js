@@ -3,9 +3,9 @@
 const {app, BrowserWindow, Menu, shell, ipcMain} = require('electron')
 const path = require('path')
 
-if (process.env.NODE_ENV === 'development') {
+// if (process.env.NODE_ENV === 'development') {
   require('electron-reload')(__dirname, { electron: require(`${__dirname}/node_modules/electron`) })
-}
+// }
 
 
 // Keep a global reference of the window object, if you don't, the window will

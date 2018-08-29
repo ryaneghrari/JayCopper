@@ -35,6 +35,7 @@ avgPriceCont.append("div").attr("class","headerTitle").text("Avg")
 var avgPriceValueCont = avgPriceCont.append("div").attr("class","avgPrice")
 
 
+
 //container for all the companies
 var cont = d3.select("body")
   .append('div')
@@ -55,12 +56,21 @@ comp.on('click',function(c){
   }
 })
 
-var name = comp.append('div')
+var comp_name = comp.append('div')
     .attr('class','compName')
-    .text(function(c){return c.name})
+    .text(function(c){return c.comp_name})
 
-var price = comp.append('div')
+var comp_shoeName = comp.append('div')
+    .attr('class','compShoeName')
+    .text(function(c){return "shoename: " + c.shoe_name})
+
+var comp_size = comp.append('div')
+    .attr('class','compShoeSize')
+    .text(function(c){return "size"+c.shoe_size});
+
+var comp_price = comp.append('div')
     .attr('class','compShoePrice');
+
 
 
 
@@ -71,7 +81,7 @@ setInterval(function(){
   update();
 
   //update price text
-  price.text(function(c){ return c.shoePrice});
+  comp_price.text(function(c){ return c.shoePrice});
 },1000)
 
 
@@ -124,7 +134,7 @@ async function update(){
 
 
   //Update the company with the minimum shoe price
-  lowestCompName.attr('class','minCompName').text(function(){ return minComp.name })
+  lowestCompName.attr('class','minCompName').text(function(){ return minComp.comp_name })
 
   //Update the value of the price
   lowestCompPrice.attr('class','minCompPrice').text(function(){ return minComp.shoePrice })

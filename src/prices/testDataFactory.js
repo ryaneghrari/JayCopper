@@ -4,11 +4,11 @@ const companies = {
     return ('$' + m.toFixed(2).replace(/\d(?=(\d{3})+\.)/g, '$&,'));
   },
   arr: [
-    {name: 'Nike',type: 'retailer', getShoePrice: getShoePrice},
-    {name: 'Adidas',type: 'retailer', getShoePrice: getShoePrice},
-    {name: 'Flightclub',type: 'reseller', getShoePrice: getShoePrice, link: "https://www.flightclub.com/air-jordan-10-retro-ovo-summit-white-metallic-gold-wht-012292"},
-    {name: 'Stockx',type: 'reseller', getShoePrice: getShoePrice, link:"https://stockx.com/jordan-10-retro-drake-ovo-white"},
-    {name: 'Kixify',type: 'reseller', getShoePrice: getShoePrice, link:"https://www.kixify.com/product/jordan-10-ovo-white-size-10-5"}
+    {comp_name: 'Nike',type: 'retailer', getShoePrice: getShoePrice},
+    {comp_name: 'Adidas',type: 'retailer', getShoePrice: getShoePrice},
+    {comp_name: 'Flightclub',type: 'reseller', getShoePrice: getShoePrice, link: "https://www.flightclub.com/air-jordan-10-retro-ovo-summit-white-metallic-gold-wht-012292"},
+    {comp_name: 'Stockx',type: 'reseller', getShoePrice: getShoePrice, link:"https://stockx.com/jordan-10-retro-drake-ovo-white"},
+    {comp_name: 'Kixify',type: 'reseller', getShoePrice: getShoePrice, link:"https://www.kixify.com/product/jordan-10-ovo-white-size-10-5"}
   ]
 }
 

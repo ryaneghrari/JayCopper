@@ -1,6 +1,6 @@
-.shoeName{
+#query{
   font-size: 24px;
-  color: white;
+  color: gray;
   position: relative;
   font-weight: 600;
   opacity: .8;
@@ -10,77 +10,79 @@
   padding: 40px;
 
 }
-.companiesCont{
+.shoesCont{
   display: flex;
   /* border: 1px blue solid; */
   padding: 5px;
-  margin: 40px;
+  margin: 20px;
   flex-flow: row wrap;
 }
 
-.compCont{
+.shoeCont{
   position: relative;
   cursor: pointer;
   padding: 5px;
   margin: 5px;
   flex-basis: 100%;
   /* border: 1px white solid; */
-  border-bottom: 1px white solid;
+  /* border-bottom: 1px white solid; */
   /* border-radius: 5px; */
   display: flex;
   justify-content: space-between;
   transition: all .3s ease;
 }
 
-.compCont:hover{
+.shoeCont:hover{
   background: #cb7c00;
+  color: white;
 }
-.compCont:active{
+.shoeCont:active{
   color: black;
 }
 
-.compName{
+.shoe_compName{
   font-weight: 300;
   padding: 10px;
   margin: 10px;
-  border: 1px red solid;
+  /* border: 1px red solid; */
   flex-basis: 10%;
 }
-.compShoeName{
+.shoe_shoeName{
   text-align: left;
   flex-basis: 50%;
   font-weight: 600;
   padding: 10px;
   margin: 10px;
-  border: 1px red solid;
+  /* border: 1px red solid; */
 }
-.compShoeSize{
+.shoe_shoeSize{
   font-weight: 600;
   padding: 10px;
   margin: 10px;
-  border: 1px red solid;
+  /* border: 1px red solid; */
   flex-basis: 10%;
 }
-.compShoePrice{
+.shoe_shoePrice{
   font-weight: 600;
   padding: 10px;
   margin: 10px;
-  border: 1px red solid;
+  /* border: 1px red solid; */
   flex-basis: 75px;
 }
 
-.header{
+.summary{
   /* border: 1px red solid; */
   padding: 5px;
   margin: 5px;
   display: flex;
   justify-content: space-around;
-  text-align: center;
+  /* text-align: center; */
 }
 .minCompCont{
   z-index: 1000;
   flex-basis: 33%;
-  border: 1px white solid;
+  /* border: 1px red solid; */
+  min-height: 200px;
   cursor: pointer;
   padding: 5px;
   margin: 5px;
@@ -88,11 +90,12 @@
 }
 .minCompCont:hover{
   background: #cb7c00;
+  color: white;
 }
 .minCompName{
   /* border: 1px red solid; */
   margin: 5px;
-  font-weight: 600;
+  font-weight: 300;
 }
 .minCompPrice{
   /* border: 1px red solid; */
@@ -106,7 +109,7 @@
   padding: 5px;
   margin: 5px;
 }
-.headerTitle{
+.summaryTitle{
   /* border: 1px red solid; */
   padding: 5px;
   margin: 5px;
@@ -117,4 +120,71 @@
   padding: 5px;
   margin: 5px;
   font-weight: 600;
+}
+
+#sizeTitle{
+  font-size: 16px;
+  /* border: 1px red solid; */
+  padding: 20px;
+  position: relative;
+  text-align: center;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+#slider{
+  /* border: 1px red solid; */
+  position: relative;
+  left: 50%;
+  transform: translate(-50%);
+}
+.ticks {
+  font: 10px sans-serif;
+}
+
+.track,
+.track-inset,
+.track-overlay {
+  stroke-linecap: round;
+}
+
+.track {
+  stroke: gray;
+  stroke-opacity: 1;
+  stroke-width: 5px;
+}
+
+.track-inset {
+  stroke: gray;
+  stroke-width: 2px;
+}
+
+.track-overlay {
+  pointer-events: stroke;
+  stroke-width: 50px;
+  stroke: transparent;
+  cursor: crosshair;
+}
+
+.handle {
+  fill: orange;
+}
+
+#resultsSeparator{
+  /* border: 1px red solid; */
+  padding: 40px;
+  padding-bottom: 5px;
+  color: gray;
+  border-bottom: 1px gray solid;
+}
+
+#loading{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: orange;
+  z-index: 6000;
+  padding: 300px;
 }
